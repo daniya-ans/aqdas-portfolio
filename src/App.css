@@ -599,13 +599,23 @@
 }
 
 .seventh-section {
-  padding: 80px 20px;
+  padding: 80px 80px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
 }
 
-.seventh-section span:nth-child(1) {
+.seventh-section .main-content {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.seventh-section .main-content span {
   color: #000;
   font-family: "General Sans";
   font-size: clamp(28px, 5vw, 48px);
@@ -620,7 +630,6 @@
   font-size: clamp(14px, 2vw, 16px);
   line-height: 1.5;
   margin: 16px 0 32px 0;
-  max-width: 600px;
 }
 
 .seventh-section button {
@@ -635,11 +644,19 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  align-self: flex-start;
 }
 
 .seventh-section button:hover {
   background: #C8102E;
   transform: translateY(-2px);
+}
+
+.seventh-section .side-content {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
 }
 
 .seventh-section .psst {
@@ -648,7 +665,7 @@
   font-size: clamp(18px, 3vw, 24px);
   font-weight: 500;
   display: block;
-  margin: 60px 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .seventh-section .para-2 {
@@ -656,17 +673,20 @@
   font-family: "General Sans";
   font-size: clamp(14px, 2vw, 16px);
   line-height: 1.6;
-  margin: 16px 0 60px 0;
+  margin: 0;
 }
 
 .seventh-section .footer {
-  padding: 40px 0;
+  grid-column: 1 / -1;
+  padding: 40px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   border-top: 1px solid rgba(110, 110, 115, 0.20);
+  margin-top: 60px;
+  margin-bottom: -40px;
 }
 
 .seventh-section .footer span {
@@ -765,6 +785,18 @@
   
   .sixth-section .sec-3 {
     grid-template-columns: 1fr;
+  }
+  
+  .seventh-section {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  
+  .seventh-section .main-content,
+  .seventh-section .side-content {
+    grid-column: 1;
+    margin-top: 50px;
   }
 }
 
@@ -883,6 +915,7 @@
   
   .seventh-section {
     padding: 60px 15px;
+    margin-top: 40px;
   }
   
   .seventh-section .footer {

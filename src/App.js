@@ -49,7 +49,7 @@ function App() {
 
       <div className="second-section">
         <div className="content">
-          <p>I’m <span>Aqdas Idris</span>, I work as a <span>UI/UX designer</span> specialized in the providing <span>design solutions</span> backed by <span>research</span> and conception of <span>custom and unique website</span> backed by <span>design principles</span>.  I love <span>designing interfaces</span> with a beautiful and <span>strong user experience</span>. </p>
+          <p>I'm <span>Aqdas Idris</span>, I work as a <span>UI/UX designer</span> specialized in the providing <span>design solutions</span> backed by <span>research</span> and conception of <span>custom and unique website</span> backed by <span>design principles</span>.  I love <span>designing interfaces</span> with a beautiful and <span>strong user experience</span>. </p>
           <a href="#">View about Me <img src={Arrow} alt="arrow1" /></a>
         </div>
       </div>
@@ -58,7 +58,7 @@ function App() {
         <div className='work-header'>
           <div className='first'>
             <img src={Square} alt="square" /><br />
-            <span>I HAVE A YEAR’S</span><br />
+            <span>I HAVE A YEAR'S</span><br />
             <img src={North} alt="arrow3" />
           </div>
           <div className='second'>
@@ -168,11 +168,17 @@ function App() {
       </div>
 
       <div className='seventh-section'>
-        <span>GOT A PROJECT?</span>
-        <p className='para-1'>Lets Connect. I also offer services as a freelancer. whether its a project from scratch or A revamp. Also I enjoy knowing or guiding people so don’t hesitate if you have a question or just wanna say “Hi”. Looking forward to hear from you.</p>
-        <button>Lets Connect</button><br />
-        <span className='psst'>Psst.... A little more about</span>
-        <p className='para-2'>In my free time, I love to practice designing interfaces and read a <br />good book, solve a rubiks cube, push my motorbike to its limits and <br />cook. And I'm a gifs lover and sticker lover.<br /><br />There's nothing better than a delicious Italian dish, a good movie with<br /> a twist at the end, a swim, a trip with friends, or relaxing in silence!</p>
+        <div className='main-content'>
+          <span>GOT A PROJECT?</span>
+          <p className='para-1'>Lets Connect. I also offer services as a freelancer. whether its a project from scratch or A revamp. Also I enjoy knowing or guiding people so don't hesitate if you have a question or just wanna say "Hi". Looking forward to hear from you.</p>
+          <button>Lets Connect</button>
+        </div>
+        
+        <div className='side-content'>
+          <span className='psst'>Psst.... A little more about</span>
+          <p className='para-2'>In my free time, I love to practice designing interfaces and read a good book, solve a rubiks cube, push my motorbike to its limits and cook. And I'm a gifs lover and sticker lover.<br /><br />There's nothing better than a delicious Italian dish, a good movie with a twist at the end, a swim, a trip with friends, or relaxing in silence!</p>
+        </div>
+        
         <div className='footer'>
           <span>Copyright 2025-2032</span>
           <span>AQDAS IDRIS</span>
