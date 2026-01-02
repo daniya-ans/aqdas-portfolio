@@ -8,7 +8,8 @@ import img from './main_pic.png';
 function App() {
   return (
     <div className="body">
-
+      <div className="left-bar"></div>
+      <div className="right-bar"></div>
       <div className="first-section">
 
         <div className="header">
@@ -27,7 +28,7 @@ function App() {
         </div>
 
         <div className="pic-section">
-          <p>JUNE &nbsp;&nbsp;&nbsp; 14 &nbsp;&nbsp;&nbsp; 2000</p>
+          <p>June 14 2000</p>
           <img src={Profile} alt="Profile" />
           <p>1 Year Experience</p>
         </div>
@@ -63,6 +64,7 @@ function App() {
           </div>
           <div className='second'>
           <span>EXPERIENCE</span>
+          
           </div>
 
           <div className='third'>
@@ -73,6 +75,7 @@ function App() {
         </div>
         <div className='work-content'>
           <p>REAL WORK EXPERIENCE FROM A PRODUCT BASED COMPANY<br /> TO SERVICE BASED COMPANY. </p>
+          <img src={North} alt='Arrow-down'/>
         </div>
       </div>
 
@@ -84,7 +87,7 @@ function App() {
           </div>
           <div className='sec-2'>
             <span>UI/UX Designer - Intern</span><br />
-            <span>at Corider for 3 months. </span>
+            <span>at Corider for <b>3 months</b>. </span>
             <p>Corider was a product based company, A startup. A ride sharing app, and no, its not carpooling app. It is a ride sharing app that allows user traveling to similar destination share ride of any kind public, private and split the cost while making a travel buddy.</p>
             <a href="#">View Case Study <img src={Arrow} alt="arrow3" /></a>
           </div>
@@ -95,7 +98,7 @@ function App() {
           </div>
           <div className='sec-2'>
             <span>UI/UX Designer - Intern</span>
-            <span>at Idealake Information Technologies pvt ltd for 1 year.</span>
+            <span>at Idealake Information Technologies pvt ltd for <b>1 year</b>.</span>
             <p>Corider was a product based company, A startup. A ride sharing app, and no, its not carpooling app. It is a ride sharing app that allows user traveling to similar destination share ride of any kind public, private and split the cost while making a travel buddy.</p>
             <a href="#">View Case Study <img src={Arrow} alt="arrow3" /></a>
           </div>
@@ -120,12 +123,13 @@ function App() {
         </div>
         <div className='work-content'>
           <p>LIVE PROJECTS, SOME CONCEPT PROJECTS AND SOME RESEARCH AND PLAYGROUND</p>
+          <img src={North} alt='arrow-down'/>
         </div>
       </div>
 
       <div className='sixth-section'>
         <div className='sec-1'>
-          <span>CASE STUDY</span>
+          <span><b>CASE</b> STUDY</span>
           <p>LIVE PROJECTS, SOME CONCEPT PROJECTS AND SOME RESEARCH AND PLAYGROUND. LIVE PROJECTS, SOME CONCEPT.</p>
           <img src={Arrow} alt='link-1'/>
         </div>
@@ -149,19 +153,23 @@ function App() {
           <div className='inner-sec-1'>
             <h4>Case study</h4>
             <h1>HDFC BANK</h1>
-            <span>UX Design</span>
-            <span>UI Design</span>
-            <span>Wirefame</span>
-            <span>Prototype</span>
+            <div className='boxes-2'>
+              <span>UX Design</span>
+              <span>UI Design</span>
+              <span>Wirefame</span>
+              <span>Prototype</span>
+            </div>
             <p>Corider is ride sharing app. No, its not a carpooling app, Corider lets you and others traveling towards similar location find each other and travel together, sharing the cost and helping you get a companion. This app lets you ride together regardless of you owning a locomotive of your own.</p>
             </div>
           <div className='inner-sec-2'>
             <h4>Case study</h4>
             <h1>BIG SHORT</h1>
-            <span>UX Design</span>
-            <span>UI Design</span>
-            <span>Wirefame</span>
-            <span>Prototype</span>
+            <div className='boxes-3'>
+              <span>UX Design</span>
+              <span>UI Design</span>
+              <span>Wirefame</span>
+              <span>Prototype</span>
+            </div>
             <p>Corider is ride sharing app. No, its not a carpooling app, Corider lets you and others traveling towards similar location find each other and travel together, sharing the cost and helping you get a companion. This app lets you ride together regardless of you owning a locomotive of your own.</p>
           </div>
         </div>
