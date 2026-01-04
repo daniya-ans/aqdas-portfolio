@@ -4,10 +4,17 @@ import Arrow from './slant_arrow.svg';
 import North from './nort_arrow.svg';
 import Square from './square.svg';
 import img from './main_pic.png';
+import South from './south_arrow.svg';
 
 function App() {
   return (
-    <div className="body">
+    //<div className='super'>
+      //<div className='background-lines'>
+        //<hr className='left-body'/>
+        //<hr className='right-body'/>
+      //</div>
+    <div className="body">      
+      <div className='left-line-of-body'></div>
       <div className="left-bar"></div>
       <div className="right-bar"></div>
       <div className="first-section">
@@ -75,7 +82,7 @@ function App() {
         </div>
         <div className='work-content'>
           <p>REAL WORK EXPERIENCE FROM A PRODUCT BASED COMPANY<br /> TO SERVICE BASED COMPANY. </p>
-          <img src={North} alt='Arrow-down'/>
+          <img src={South} alt='Arrow-down' />
         </div>
       </div>
 
@@ -123,15 +130,17 @@ function App() {
         </div>
         <div className='work-content'>
           <p>LIVE PROJECTS, SOME CONCEPT PROJECTS AND SOME RESEARCH AND PLAYGROUND</p>
-          <img src={North} alt='arrow-down'/>
+          <img src={South} alt='arrow-down'/>
         </div>
       </div>
 
       <div className='sixth-section'>
         <div className='sec-1'>
           <span><b>CASE</b> STUDY</span>
-          <p>LIVE PROJECTS, SOME CONCEPT PROJECTS AND SOME RESEARCH AND PLAYGROUND. LIVE PROJECTS, SOME CONCEPT.</p>
-          <img src={Arrow} alt='link-1'/>
+          <div className='sec-1-2'>
+            <p>LIVE PROJECTS, SOME CONCEPT PROJECTS AND SOME RESEARCH AND PLAYGROUND. LIVE PROJECTS, SOME CONCEPT.</p>
+            <img src={Arrow} alt='link-1'/>
+          </div>
         </div>
         <div className='sec-2'>
           <div className='inner-sec-1'>
@@ -147,12 +156,14 @@ function App() {
               <span>Prototype</span>
               </div>
             <p>Corider is ride sharing app. No, its not a carpooling app, Corider lets you and others traveling towards similar location find each other and travel together, sharing the cost and helping you get a companion. This app lets you ride together regardless of you owning a locomotive of your own.</p>
+            <img src={Arrow} alt='link-2'/>
           </div>
         </div>
         <div className='sec-3'>
           <div className='inner-sec-1'>
             <h4>Case study</h4>
             <h1>HDFC BANK</h1>
+            <img src={Arrow} alt='link-3'/>
             <div className='boxes-2'>
               <span>UX Design</span>
               <span>UI Design</span>
@@ -160,10 +171,12 @@ function App() {
               <span>Prototype</span>
             </div>
             <p>Corider is ride sharing app. No, its not a carpooling app, Corider lets you and others traveling towards similar location find each other and travel together, sharing the cost and helping you get a companion. This app lets you ride together regardless of you owning a locomotive of your own.</p>
+            
             </div>
           <div className='inner-sec-2'>
             <h4>Case study</h4>
             <h1>BIG SHORT</h1>
+            <img src={Arrow} alt='link-4'/>
             <div className='boxes-3'>
               <span>UX Design</span>
               <span>UI Design</span>
@@ -171,6 +184,7 @@ function App() {
               <span>Prototype</span>
             </div>
             <p>Corider is ride sharing app. No, its not a carpooling app, Corider lets you and others traveling towards similar location find each other and travel together, sharing the cost and helping you get a companion. This app lets you ride together regardless of you owning a locomotive of your own.</p>
+             
           </div>
         </div>
       </div>
@@ -194,6 +208,7 @@ function App() {
         </div>
       </div>
     </div>
+    //</div>
   );
 }
 
