@@ -8,13 +8,38 @@ import South from './south_arrow.svg';
 
 function App() {
   return (
-    //<div className='super'>
-      //<div className='background-lines'>
-        //<hr className='left-body'/>
-        //<hr className='right-body'/>
-      //</div>
+    <div className='super'>
+      <div className='background-lines'>
+        <div className='left-body'/>
+        <div className='right-body'/>
+        <div className='june-under-line'/>
+        <div className='pic-top' />
+        <div className='pic-left' />
+        <div className='pic-right' />
+        <div className='pic-bottom' />
+        <div className='first-section-end' />
+        <div className='second-section-start' />
+        <div className='second-section-end' />
+        <div className='third-section-sent-top' />
+        <div className='third-section-sent-left' />
+        <div className='third-section-sent-right' />
+        <div className='third-section-sent-bottom' />
+        <div className='fourth-section-left-box-left-line' />
+        <div className='fourth-section-left-box-right-line' />
+        <div className='fourth-section-left-box-bottom-line' />
+        <div className='fourth-section-left-box-top-line' />
+        <div className='fourth-section-right-box-left-line' />
+        <div className='fourth-section-right-box-right-line' />
+        <div className='fourth-section-right-box-bottom-line' />
+        <div className='fourth-section-right-box-top-line' />
+        <div className='fifth-section-line-top' />
+        <div className='fifth-section-line-bottom' />
+        <div className='fifth-section-line-left' />
+        <div className='fifth-section-line-right' />
+        
+      </div>
     <div className="body">      
-      <div className='left-line-of-body'></div>
+
       <div className="left-bar"></div>
       <div className="right-bar"></div>
       <div className="first-section">
@@ -46,8 +71,8 @@ function App() {
         </div>
         <div className='footer-line'>
             <div className='link-line'>
-              <a href="#">LinkedIn</a>
-              <a href="#">Instagram</a>
+              <a href="https://www.linkedin.com/in/aqdas-idris?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+              <a href="https://www.instagram.com/aqdas_idris?igsh=MWQwMTB2bTN4aTg4aA==">Instagram</a>
             </div>
             <div className='small-info'>
               <p>A UI/UX Designer with strong base and Foundation, ensuring all design decision is informed.</p>
@@ -57,7 +82,7 @@ function App() {
 
       <div className="second-section">
         <div className="content">
-          <p>I'm <span>Aqdas Idris</span>, I work as a <span>UI/UX designer</span> specialized in the providing <span>design solutions</span> backed by <span>research</span> and conception of <span>custom and unique website</span> backed by <span>design principles</span>.  I love <span>designing interfaces</span> with a beautiful and <span>strong user experience</span>. </p>
+          <p>I’m <span>Aqdas Idris</span>, I work as a <span>UI/UX designer</span> specialized in the providing <span>design solutions</span> backed by <span>research</span> and conception of <span>custom and unique website</span> backed by <span>design principles</span>.&nbsp;&nbsp;I love <span>designing interfaces</span> with a beautiful and strong<span> user experience</span>. </p>
           <a href="#">View about Me <img src={Arrow} alt="arrow1" /></a>
         </div>
       </div>
@@ -70,10 +95,8 @@ function App() {
             <img src={North} alt="arrow3" />
           </div>
           <div className='second'>
-          <span>EXPERIENCE</span>
-          
+          <span>EXPERIENCE</span>          
           </div>
-
           <div className='third'>
             <img src={North} alt="arrow3" /><br />
             <span>AS UI/UX DESIGNER</span><br />
@@ -123,7 +146,7 @@ function App() {
           </div>
 
           <div className='third'>
-            <img src={North} alt="arrow3" /><br />
+            <img src={North} alt="arrow3" />
             <span>DESIGNED BY ME</span>
             
           </div>
@@ -208,7 +231,7 @@ function App() {
         </div>
       </div>
     </div>
-    //</div>
+    </div>
   );
 }
 
